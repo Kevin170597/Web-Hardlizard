@@ -14,7 +14,7 @@ let homePage = {
         let movies = this.leerJSON();
         let titleMovies = []
         movies.movies.forEach(function(movie) {
-            titleMovies.push("\n" + movie.title + "\n" + movie.overview)
+            titleMovies.push("\n" + movie.title)
         })
         titleMovies.sort()
         return titleMovies
